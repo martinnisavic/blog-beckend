@@ -1,0 +1,16 @@
+@BlogApi_HostAddress = https://localhost:7002
+
+### Registracija korisnika
+POST {{BlogApi_HostAddress}}/api/register
+Content-Type: application/json
+
+{
+  "name": "Marko",
+  "surname": "Markovic",
+  "username": "marko",
+  "email": "marko@gmail.com",
+  "phone": "0601234567",
+  "password": "Lozinka123!"
+}
+
+###

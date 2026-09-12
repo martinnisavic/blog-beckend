@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Application/Application.csproj" Id="83a18b5e-78e0-4b28-9d35-8062c8c0f785" />
+  <Project Path="BlogApi/BlogApi.csproj" />
+  <Project Path="DataAccess/DataAccess.csproj" />
+  <Project Path="Domain/Domain.csproj" Id="08af3e0e-c8c1-49ac-a7ec-f3e4691a767f" />
+  <Project Path="Implementation/Implementation.csproj" Id="8773ef8e-7fd9-4f0b-a2f4-c458c8508217" />
+</Solution>
