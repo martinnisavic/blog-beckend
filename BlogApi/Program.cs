@@ -4,11 +4,13 @@ using BlogApi.JWT;
 using BlogApi.Middleware;
 using BlogApi.Seed;
 using DataAccess;
+using Implementation.Emails;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Scalar.AspNetCore;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
-using Implementation.Emails;
+using Scalar.AspNetCore;
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 var builder = WebApplication.CreateBuilder(args);
 
@@ -70,6 +72,7 @@ using (var scope = app.Services.CreateScope())
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.MapScalarApiReference();
 }
 
 app.UseHttpsRedirection();
